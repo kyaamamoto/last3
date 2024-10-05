@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ふるさとID</title>
+     <!-- ファビコン -->
+     <link rel="icon" type="image/png" href="./img/IDfavicon.ico">
+    <link rel="stylesheet" href="./css/furusatoID.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="./img/fIDLogo.png" alt="ふるさとIDロゴ">
+        </div>
+        <nav>
+            <div class="menu-toggle">
+                <input type="checkbox" id="menu-checkbox">
+                <label for="menu-checkbox" class="menu-icon">&#9776;</label>
+            </div>
+            <ul class="menu">
+                <li><a href="index.html">ホーム</a></li>
+                <li><a href="#service">ふるさとIDとは</a></li>
+                <li><a href="matching.html">自治体マッチング</a></li>
+                <li><a href="#contact">お問い合わせ</a></li>
+                <li><a href="mypage_entry.php" class="login-btn">会員登録</a></li>
+                <li><a href="login_holder.php" class="login-btn">ログイン</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="hero">
+        <div class="hero-content">
+            <h1>「ふるさと<span>ID</span>」へようこそ</h1>
+            <h2>ふるさとを思うと、心が温かく穏やかになります。<br>
+                そこで過ごした思い出や、人々との絆が、心に深い安らぎをもたらしてくれます。<br>
+                ふるさとが一つではなく、いくつもあると、その温もりや安らぎを感じる場所が増え、<br>
+                日常がより豊かになります。たくさんのふるさとを見つけ、その一つ一つを大切にすることで、<br>
+                喜びや幸せが広がります。さあ、新しいふるさとを見つけて、あなたの心を豊かに彩りましょう。<br>
+                そこで待っているのは、あなたの心をさらに満たす温かい場所です。</h2>
+        </div>
+    </div>
+
+    <section id="service" class="section">
+        <div class="content">
+            <h2>ふるさとIDとは</h2>
+            <p>「ふるさとID」は、あなたが関わりを持つ地域に対する関わり具合を可視化し、<br>
+                その関わりを深めていくためのオンラインサービスです。<br>
+                これまでどのように地域と関わってきたか、今後どのように地域とかかわっていきたいか。
+                について回答することで、地域との関係性を可視化します。<br>
+
+                ふるさとを持つことの喜びとその数を増やしていく楽しさを提供し、<br>
+                地域とのつながりを大切に育んでいくことを目的としています。<br><br>
+
+                私たちのサービスは、<br>
+                「ふるさとは一つではなく、いくつあっても良い」<br>
+                というコンセプトに基づいています。<br>
+                ふるさとIDを通じて、あなたのふるさとが増えるたびに、<br>
+                笑顔と幸せが広がり、人生がより彩り豊かになることを願っています。</p>
+        </div>
+    </section>
+
+    <section id="service" class="section">
+        <div class="content">
+            <h2>ふるさとIDの特徴</h2>
+            <p><b>1.関わりの可視化:</b><br>
+                あなたがどの地域とどの程度関わっているかを一目でわかるようにします。<br>
+                関わりの深さに応じてランクが上がり、地域とのつながりが強化されます。<br><br>
+
+                <b>2.地域との連携:</b><br>
+                ふるさとIDを通じて、地域と協力しながら様々な施策を展開します。<br>
+                地域イベントやボランティア活動、ふるさと納税などを通じて、地域との絆を深めます。<br><br>
+
+                <b>3.ふるさとの数を増やす:</b><br>
+                ふるさとIDを使うことで、新たなふるさとを見つけ、増やしていく楽しさを提供します。<br>
+                多くのふるさとを持つことで、心が豊かになり、新しい挑戦や成長の機会が広がります。</p>
+        </div>
+    </section>
+
+    <section id="contact" class="scroll-point">
+        <h2><span class="bgextend bgLRextendTrigger"><span class="bgappearTrigger">Contact</span></span></h2>
+        <form method="post" action="confirm_toiawase.php" enctype="multipart/form-data">
+            <div class="form-list fadeUpTrigger">
+                <div>
+                    <dl>
+                        <dt><label for="division">会社名・部署名</label></dt>
+                        <dd><input type="text" name="Division" id="division" size="60" value=""></dd>
+                    </dl>
+                </div>
+                <div>
+                    <dl>
+                        <dt><label for="name">ご担当者名</label></dt>
+                        <dd><input type="text" name="Name" id="name" size="60" value=""></dd>
+                    </dl>
+                </div>
+                <div>
+                    <dl>
+                        <dt><label for="email">メールアドレス</label></dt>
+                        <dd><input type="email" name="E-mail" id="email" size="60" value=""></dd>
+                    </dl>
+                </div>
+                <div>
+                    <dl>
+                        <dt><label for="tel">電話番号</label></dt>
+                        <dd><input type="text" name="Tel" id="tel" size="60" value=""></dd>
+                    </dl>
+                </div>
+                <div>
+                    <dl>
+                        <dt><label for="msg">お問い合わせ内容</label></dt>
+                        <dd><textarea name="Message" id="msg" cols="50" rows="5"></textarea></dd>
+                    </dl>
+                </div>
+            </div>
+            <div class="submit-btn fadeUpTrigger"><input type="submit" name="submit" value="確認"></div>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 ふるさとID. All rights reserved.</p>
+    </footer>
+</body>
+</html>
